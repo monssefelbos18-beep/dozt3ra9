@@ -8,67 +8,75 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-container">
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Doz T3ra9 logo">
+      </a>
 
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="Doz T3ra9 logo">
-    </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
 
-    <nav class="nav">
+      <div class="header-actions">
+        <a href="login.html" class="header-login">Login</a>
+        <a href="index.html#contact" class="header-cta">Join</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
-    </nav>
-
-    <div class="header-actions">
-      <a href="login.html" class="header-login">Login</a>
-      <a href="index.html#contact" class="header-cta">Join</a>
+      <a href="login.html">Login</a>
     </div>
+  </header>
 
-  </div>
-</header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Products</span>
+          <h1>Our Products</h1>
+        </div>
 
-<main>
+        <div class="products-grid">
 
-<section class="section">
-  <div class="container">
-    <h1>Our Products</h1>
+          <div class="product-card reveal">
+            <img src="images/tshirt.jpg" alt="Sport T-Shirt">
+            <h3>Sport T-Shirt</h3>
+            <p>Light, breathable and made for performance.</p>
+            <span class="price">Coming soon...</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
 
-    <div class="products-grid">
+          <div class="product-card reveal">
+            <img src="images/shorts.jpg" alt="Training Shorts">
+            <h3>Training Shorts</h3>
+            <p>Comfortable and flexible for daily workouts.</p>
+            <span class="price">Coming soon...</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
 
-      <div class="product-card reveal">
-        <img src="images/tshirt.jpg" alt="Sport T-Shirt">
-        <h3>Sport T-Shirt</h3>
-        <p>Light, breathable and made for performance.</p>
-        <span class="price">coming soon ...  </span>
-        <button class="buy-btn">Buy Now</button>
+          <div class="product-card reveal">
+            <img src="images/shoes.jpg" alt="Running Shoes">
+            <h3>Running Shoes</h3>
+            <p>Designed for speed and stability.</p>
+            <span class="price">Coming soon...</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="product-card reveal">
-        <img src="images/shorts.jpg" alt="Training Shorts">
-        <h3>Training Shorts</h3>
-        <p>Comfortable and flexible for daily workouts.</p>
-        <span class="price">coming soon ...</span>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card reveal">
-        <img src="images/shoes.jpg" alt="Running Shoes">
-        <h3>Running Shoes</h3>
-        <p>Designed for speed and stability.</p>
-        <span class="price">coming soon ...</span>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
