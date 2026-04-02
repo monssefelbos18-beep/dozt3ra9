@@ -27,13 +27,20 @@
       <a href="index.html#contact" class="header-cta">Join</a>
     </div>
 
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
   </div>
 </header>
 
 <main>
   <section class="section">
     <div class="container">
-
       <div class="login-container">
         <form class="login-form reveal">
           <h2>Welcome Back</h2>
@@ -43,14 +50,35 @@
 
           <button type="submit" class="buy-btn">Login</button>
 
+          <button type="button" class="buy-btn google-btn" onclick="loginWithGoogle()">
+            Continue with Google
+          </button>
+
           <p id="error"></p>
         </form>
       </div>
-
     </div>
   </section>
 </main>
 
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBxJroaCIGvc5OI4ZckQoq3e32khjV40A",
+    authDomain: "dozt3ra9.firebaseapp.com",
+    projectId: "dozt3ra9",
+    storageBucket: "dozt3ra9.firebasestorage.app",
+    messagingSenderId: "838420142199",
+    appId: "1:838420142199:web:1a21bba30eb5b2a5b38e72"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="script.js"></script>
 <script src="login.js"></script>
 </body>
 </html>
