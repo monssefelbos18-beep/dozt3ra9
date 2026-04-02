@@ -738,4 +738,109 @@ img {
   .login-form h2 {
     font-size: 28px;
   }
+  /* --- إضافات خاصة بالـ About والـ Contact Form --- */
+
+.contact-info-small p {
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.contact-info-small strong {
+    color: #a2fa33;
+}
+
+/* تنسيق الـ Textarea داخل الفورم */
+textarea:focus {
+    outline: none;
+    border-color: #a2fa33;
+    box-shadow: 0 0 0 3px rgba(162, 250, 51, 0.12);
+}
+
+/* تحسين شكل الـ About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* التجاوب مع الهاتف (Responsive) */
+@media (max-width: 980px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+/* --- Footer Styling --- */
+.footer {
+    background: #080808;
+    border-top: 1px solid var(--line);
+    padding-top: 80px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-brand p {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 320px;
+    line-height: 1.6;
+}
+
+.footer-links h4, .footer-social h4 {
+    color: #a2fa33;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a, .footer-social a {
+    display: block;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: white;
+    padding-left: 5px; /* تأثير خفيف عند التحويم */
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #555;
+    font-size: 13px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .footer-brand p {
+        margin: 0 auto;
+    }
+    .footer-links a:hover, .footer-social a:hover {
+        padding-left: 0;
+    }
+}
 }
