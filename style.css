@@ -469,6 +469,70 @@ img {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: #111;
+  padding: 32px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 460px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 6px;
+  font-size: 34px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 15px;
+}
+
+.login-form input::placeholder {
+  color: #8f8f8f;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #a2fa33;
+  box-shadow: 0 0 0 3px rgba(162, 250, 51, 0.12);
+}
+
+.login-form .buy-btn,
+.login-form .google-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.google-btn {
+  margin-top: 0;
+}
+
+#error {
+  min-height: 20px;
+  margin-top: 4px;
+  color: #ff6b6b;
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Contact card */
 .contact-card {
   background: linear-gradient(180deg, #171717, #101010);
@@ -634,58 +698,21 @@ img {
   .contact-card,
   .value-card,
   .hero-card,
-  .product-card {
+  .product-card,
+  .login-form {
     border-radius: 18px;
   }
 
   .logo img {
     height: 28px;
   }
-  .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.login-form {
-  background: #111;
-  padding: 30px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,0.05);
-}
+  .login-form {
+    padding: 22px;
+    max-width: 100%;
+  }
 
-.login-form h2 {
-  margin-bottom: 20px;
-}
-
-.login-form input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 8px;
-  background: #222;
-  color: white;
-}
-
-.login-form input:focus {
-  outline: 1px solid #a2fa33;
-}
-
-.login-form button {
-  width: 100%;
-}
-
-#error {
-  margin-top: 10px;
-  color: red;
-  font-size: 14px;
-}
-.google-btn {
-  margin-top: 12px;
-  width: 100%;
-}
+  .login-form h2 {
+    font-size: 28px;
+  }
 }
