@@ -65,3 +65,13 @@ allAnchorLinks.forEach((link) => {
     }
   });
 });
+
+// Handling Contact Form Submission
+const contactForm = document.querySelector('.contact-card form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // باش الصفحة ما تشرجيش من جديد
+        alert('Thank you! Your message has been sent successfully. 🔥');
+        contactForm.reset(); // باش يخواو الخانات من بعد الإرسال
+    });
+}
