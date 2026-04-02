@@ -684,4 +684,8 @@ img {
   color: red;
   font-size: 14px;
 }
+.google-btn {
+  margin-top: 12px;
+  width: 100%;
+}
 }
