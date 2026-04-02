@@ -641,4 +641,47 @@ img {
   .logo img {
     height: 28px;
   }
+  .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+}
+
+.login-form input:focus {
+  outline: 1px solid #a2fa33;
+}
+
+.login-form button {
+  width: 100%;
+}
+
+#error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
 }
